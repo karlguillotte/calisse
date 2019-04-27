@@ -3,6 +3,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"qu/t":[function(require,module,exports) {
 "use strict";function e(){var e=new mapboxgl.Map({container:"map",style:"mapbox://styles/mapbox/outdoors-v9",center:[-118.2,51],zoom:9});return e.scrollZoom.disable(),e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=e,mapboxgl.accessToken="pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA";
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./styles.css");var e=r(require("./map"));function r(e){return e&&e.__esModule?e:{default:e}}(0,e.default)();
+"use strict";require("./styles.css");var e=t(require("./map"));function t(e){return e&&e.__esModule?e:{default:e}}(0,e.default)(),document.addEventListener("scroll",function(){document.getElementById("top").style.display=(document.body.scrollTop||document.documentElement.scrollTop)>window.innerHeight/2?"block":"none"});
 },{"./styles.css":"Tnu0","./map":"qu/t"}]},{},["Focm"], null)
-//# sourceMappingURL=/calisse/src.a853d01d.js.map
+//# sourceMappingURL=/calisse/src.ac56afe1.js.map
