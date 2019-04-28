@@ -9,14 +9,11 @@ export default function init() {
         style: 'mapbox://styles/mapbox/outdoors-v9',
         center: [-118.23, 51],
         zoom: 11,
+        interactive: false,
     })
 
     map.scrollZoom.disable()
-    map.addControl(new mapboxgl.NavigationControl())
-
-    map.on('moveend', () => {
-        console.warn(map.getCenter())
-    })
+    // map.addControl(new mapboxgl.NavigationControl())
 
     map.on('load', () => {
         map.addLayer({

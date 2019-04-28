@@ -11,6 +11,12 @@
             href="https://fonts.googleapis.com/css?family=Cabin"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
     </head>
     <body>
         <header>
@@ -51,23 +57,36 @@
                         <li>No first aid</li>
                         <li>No prizes</li>
                     </ul>
-                    <p>
-                        Let's meet on
-                        <time datetime="2019-06-22T15:00:00.000Z"
-                            >Saturday morning, June 22nd at 8am</time
-                        >
-                        at the Grizzly Plaza.
-                    </p>
-                    <p>Come back for more details and updates...</p>
+                    <dl>
+                        <dt title="Date & time">
+                            <i class="fas fa-calendar-check"></i>
+                        </dt>
+                        <dd>
+                            <time datetime="2019-06-22T15:00:00.000Z"
+                                >Saturday, June 22nd, 2019 at 08:00</time
+                            >
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt title="Location">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </dt>
+                        <dd>Grizzly Plaza, Revelstoke</dd>
+                    </dl>
+                    <hr />
+                    <em>
+                        Come back for more details and updates...
+                    </em>
                 </div>
                 <a class="nav-section next-section" href="#details">↓</a>
             </section>
             <section id="details">
                 <h2>Trails choice subject to change...</h2>
                 <div id="map"></div>
+                <a class="nav-section next-section" href="#footer">↓</a>
             </section>
         </main>
-        <footer>
+        <footer id="footer">
             <p>
                 Karl Guillotte & David Labonté
             </p>
