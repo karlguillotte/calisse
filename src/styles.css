@@ -63,12 +63,6 @@ section {
     background-color: white;
 }
 
-.next-section {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 1.5rem;
-}
-
 #synopsis {
     padding: 2rem;
     background-color: lightgray;
