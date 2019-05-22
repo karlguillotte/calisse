@@ -7,8 +7,10 @@ export default function init() {
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/outdoors-v9',
-        center: [-118.23, 51],
-        zoom: 11,
+        bounds: new mapboxgl.LngLatBounds(
+            new mapboxgl.LngLat(-118.17, 51.09),
+            new mapboxgl.LngLat(-118.3, 50.92)
+        ),
         interactive: false,
     })
 
