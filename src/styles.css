@@ -2,6 +2,33 @@ html {
     font-size: 12px;
     scroll-behavior: smooth;
 }
+html::before {
+    content: 'Cancelled';
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: red;
+    font-size: 7em;
+    transform: rotate(45deg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html::after {
+    content: 'See you next year!';
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 2em;
+    color: green;
+    text-align: center;
+    width: 100vw;
+}
+
 
 @media (min-width: 860px) {
     html {
@@ -22,6 +49,7 @@ body {
     font-family: 'Cabin', sans-serif;
     margin: 0;
     box-sizing: border-box;
+    opacity: 0.25;
 }
 
 h1 {
