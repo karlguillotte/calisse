@@ -9,7 +9,7 @@ html::before {
     left: 0;
     color: red;
     font-size: 7em;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     width: 100vw;
     height: 100vh;
     display: flex;
